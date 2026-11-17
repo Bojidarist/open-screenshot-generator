@@ -41,6 +41,12 @@ export const GOOGLE_FONTS: AppFont[] = [
   { family: 'Calistoga', category: 'display', fallback: 'cursive', script: 'latin' },
   { family: 'Pacifico', category: 'handwriting', fallback: 'cursive', script: 'latin' },
   { family: 'Baloo 2', variants: ['400', '500', '600', '700', '800'], category: 'display', fallback: 'cursive', script: 'latin' },
+  // Heroic Habit's brand pair: Gabarito for signage, Hanken Grotesk for body.
+  // Both are served by Google Fonts, so nothing is bundled; the weight lists
+  // are the families' real ranges (Gabarito starts at 400) because css2
+  // rejects the whole request if one axis value is out of range.
+  { family: 'Gabarito', variants: ['400', '500', '600', '700', '800', '900'], category: 'sans-serif', fallback: 'sans-serif', script: 'latin' },
+  { family: 'Hanken Grotesk', variants: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], category: 'sans-serif', fallback: 'sans-serif', script: 'latin' },
   { family: 'Caveat', variants: ['400', '500', '600', '700'], category: 'handwriting', fallback: 'cursive', script: 'latin' },
   { family: 'Fira Sans Condensed', variants: ['100', '200', '300', '400', '500', '600', '700', '800', '900'], category: 'sans-serif', fallback: 'sans-serif', script: 'latin' },
   // Cyrillic and Greek deliberately get no family of their own. Checked against
